@@ -1,0 +1,57 @@
+
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum nome 2",
+    "description": "Alguma descricao",
+    "price": 1400,
+    "image": "Alguma imagem"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+DELETE http://localhost:3000/api/services/63a0b9bf08883377785af649
+
+###
+
+Put http://localhost:3000/api/services/63a0b98708883377785af645
+Content-Type: application/json
+
+{
+    "name": "ATT Teste",
+    "description": "Alguma descricao",
+    "price": 1600,
+    "image": "Alguma imagem"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Evento",
+    "author": "mateus",
+    "description": "Uma festa de cachorro",
+    "budget": 2500,
+    "image": "Alguma imagem",
+    "services": [
+    {
+        "name": "Algum nome 1",
+        "description": "Alguma descricao",
+        "price": 1000,
+        "image": "Alguma imagem"
+    }, 
+    {
+        "name": "Algum nome 2",
+        "description": "Alguma descricao",
+        "price": 1400,
+        "image": "Alguma imagem"
+    }
+    ]
+}
